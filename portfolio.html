@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Loyal The Salon Protfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="text/x-icon" media="screen" href="images/New Project.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='portfoliostyle.css'>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src='main.js'></script>
+
+</head>
+<body>
+<!-- header-->
+    <header>
+        <div class="logo">LOYAL THE SALON</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+            
+                <li>
+                    <a href="index.html#services">Service</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">About</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#footer">Follow</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- End Header -->
+
+
+
+
+    <section id="contain2">
+        
+        <h2>About Full Body Massage Chair</h2>
+        <hr style="width: 40%;" color="gray"><br>
+        <p>The chair can perform different massage actions such as kneading and rolling.  It loosens the stiffness in the muscles and regulates the blood circulation with the massage action that is similar to a massage specialist fist. It is a good way to relax after your long day at work. Kneading Massage It provides a thumb kneading action, the rollers of this massage chair moves in dual circular motion to stimulate the relaxing action.</p><br>
+
+        <div class="vdo"><iframe width="90%" height="400" src="https://www.youtube.com/embed/-EyAjyAq_l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <br><br><br>
+        <p>This massage action gently ease away the aches and soreness especially on your spine area. Dual ( Knead + Rolling) This action doubles the pleasure, relieving you from ache, soreness and stiffness. Rolling It massages away your strains from your back and relieves you from the back pains. Sense Of Well-Being Relaxation You body enjoys penetrating and soothing massage with the variety of massage actions. It relaxes your mind and body completely with different therapeutic massage actions. Stress Relief Helps promote Endorphins which are “feel good” chemicals that are released.</p>
+    </section>
+
+
+
+    <section id="contain3">
+        <div class="img4">
+            <img src="images/mchair.jpg" alt="img">
+        </div>
+        <div class="info">
+            <h2>Benefits of Full Body Massage</h2>
+            <p> &#8594;Full Body Massage Chair<br>
+                &#8594;Zero Gravity Recliner Chair<br>
+                &#8594;Reduces Stiffness in tired muscles<br>
+                &#8594;Air Bags on shoulder/arms/legs/foot<br>
+                &#8594;Kneading/Rolling Massage on Back for Pain Relief</p>
+        </div>
+
+    </section>
+
+<!-- End Img -->
+
+
+<!-- Footer -->
+
+<section id="footer">
+    <div class="footer-container">
+        <div class="brand"><h1><span>L</span>oyal the <span>S</span>alon</h1></div>
+        <div class="social-icon">
+            <div class="social-item">
+                <a href="https://www.facebook.com/vicky.solanki.7311?mibextid=ZbWKwL"><img src="images/icons8-facebook-50 (1).png"/></a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.instagram.com/loyalthesalonofficial/"><img src="images/icons8-instagram-50 (1).png"/></a>
+            </div>
+            <div class="social-item">
+                <a href="https://wa.link/6q8qmm"><img src="images/icons8-whatsapp-50 (1).png"/></a>
+            </div>
+
+            <div class="social-item">
+                <a href="mailto:vickysolanki777@gmail.com"><img src="images/icons8-mail-50.png" alt="mail"></a>
+            </div>
+           
+            <div class="social-item">
+                <a href="tel:+918980745777"><img src="images/icons8-phone-50.png" alt="mail"></a>
+            </div>
+        </div>
+        <p>Copyright @2023 Hemang Solanki</p>
+    </div>
+</section>
+<!-- End footer -->
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround: true,
+  freeScroll: true
+});
+</script>
+
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+</body>
+</html>

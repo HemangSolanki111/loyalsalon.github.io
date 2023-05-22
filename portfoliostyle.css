@@ -1,0 +1,270 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0px;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: .2s;
+    margin: 0 5px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.nav-bar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.nav-bar ul li a.active {
+    color: black;
+    background-color: white;
+}
+/* End Header */
+
+
+
+
+
+/* contain2 */
+
+#contain2{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 5%;
+    height: 800px;
+    float: left;
+}
+
+#contain2 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+#contain2 p{
+    font-size: 18px;
+    color: gray;
+    margin: 0% 10%;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.vdo{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+/* end contain 2 */
+
+
+
+/* contain3 */
+
+#contain3{
+    width: 96%;
+    height: 500px;
+    margin-left: 2%;
+    margin-top: 5%;
+    float: left;
+}
+
+.img4 img{
+    width: 60%;
+    height: 450px;
+    float: left;
+}
+
+.info{
+    float: left;
+    background-color: rgba(128, 128, 128, 0.575);
+    width: 40%;
+    height: 450px;
+}
+
+.info h2{
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info p{
+    line-height: 60px;
+    font-size: 22px;
+}
+
+/* end contain3 */
+
+
+/* footer */
+
+#footer{
+    background-color: rgb(50, 52, 62);
+    float: left;
+    width: 100%;
+}
+
+.brand{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.brand span{
+    color: crimson;
+}
+
+
+#footer .social-icon{
+    display: flex;
+    justify-content: center;
+}
+
+#footer .social-item img{
+    width: 50%;
+}
+
+#footer .social-item img:hover{
+    transform: scale(1.1);
+}
+
+
+#footer p{
+    text-align: center;
+    color: rgba(211, 211, 211, 0.463);
+}
+/* end footer */
+
+
+
+@media only screen and (max-width: 1320px) {
+    header{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: black;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+
+    #contain3{
+        width: 100%;
+        float: left;
+        margin-top: 100%;
+    }
+
+    #contain3 img{
+        width: 100%;
+        height: 250px;
+    }
+
+    #contain3 .info{
+        width: 100%;
+    }
+
+
+
+    #footer{
+        margin-top: 60%;
+        min-height: fit-content;
+        min-width: 100vw;    
+    }
+
+}
